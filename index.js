@@ -71,7 +71,7 @@ async function updateGist(stats) {
         ]
             .map((content) => {
             let line = `${content[1]}: ${content[2]}`;
-            let spaces = ' '.repeat(10 - line.length); // 문자열 길이에 따라 동적으로 공백을 조정
+            let spaces = ' '.repeat(5 - line.length); // 문자열 길이에 따라 동적으로 공백을 조정
             line = `${content[0]} ${line}${spaces}`;
             return line;
             })
