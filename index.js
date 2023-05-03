@@ -70,8 +70,8 @@ async function updateGist(stats) {
             ['📦', `Contributed to`, humanize(stats.contributedTo)],
         ]
             .map((content) => {
-               let line = `${content[1]}: ${content[2]}`; // 콜론 다음에 공백을 하나만 추가
-                line = `${content[0]}   ${line}`; // 이모지와 텍스트 사이의 공백도 줄임
+           let line = `${content[1]}: ${content[2]}`; // 콜론 다음에 공백을 하나만 추가
+             line = `${content[0]} ${line}`; // 이모지와 텍스트 사이의 공백을 하나로 줄임
                 return line;
             })
             .join('\n') + '\n';
